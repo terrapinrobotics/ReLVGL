@@ -36,7 +36,7 @@ int main() {
 
     // create a label
     Label label("Hello World!");
-    label.setAlign(display, LV_ALIGN_CENTER);
+    label.setAlign(LV_ALIGN_CENTER);
 }
 ```
 
@@ -95,11 +95,11 @@ int main() {
 
     // create a label
     Label label("Hello World!");
-    label.setAlign(display, LV_ALIGN_CENTER);
+    label.setAlign(LV_ALIGN_CENTER);
 
     // create a second label
     Label label2("This is another label");
-    label2.setAlign(display, LV_ALIGN_CENTER);
+    label2.setAlign(LV_ALIGN_CENTER);
     label2.setFont(&lv_font_montserrat_28);
 }
 ```
