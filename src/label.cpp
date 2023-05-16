@@ -5,6 +5,7 @@ Label::Label(const char* text, lv_coord_t x, lv_coord_t y) : label(lv_label_crea
     // init object
     LVObject::initObject();
     LVObject::setPos(x, y);
+    setColor(0xFFFFFF);
     lv_label_set_text(label, text);
 }
 
