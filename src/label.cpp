@@ -1,9 +1,10 @@
 #include "relvgl/label.h"   
 #include "pros/apix.h"
 
-Label::Label(const char* text, lv_coord_t x, lv_coord_t y) : label(lv_label_create(lv_scr_act())), LVObject(label) {
+Label::Label(const char* text, lv_coord_t x, lv_coord_t y) : label(lv_label_create(lv_scr_act())) {
     // init object
-    LVObject::initObject();
+    LVObject::initObject(label);
+
     LVObject::setPos(x, y);
     setColor(0xFFFFFF);
     lv_label_set_text(label, text);

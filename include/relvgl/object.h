@@ -1,6 +1,7 @@
 #pragma once
 
 #include "liblvgl/lvgl.h"
+#include <iostream>
 
 class LVObject {
 public:
@@ -53,12 +54,13 @@ public:
     }
 
 protected:
-    LVObject(lv_obj_t* obj) : obj(obj) {
+    LVObject() {
         lv_style_init(&style);
     }
 
-    void initObject() {
-        lv_obj_add_style(obj, &style, 0);
+    void initObject(lv_obj_t* obj) {
+        this->obj = obj;
+        lv_obj_add_style(this->obj, &style, 0);
     }
 
 private:

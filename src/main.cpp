@@ -30,10 +30,10 @@ void initialize() {
 	label->setFont(&lv_font_montserrat_32);
 	label->setAlign(LV_ALIGN_CENTER, 0, -25);
 
-	/*Label* label2 = new Label("Davis S. | v1.0.0");
+	Label* label2 = new Label("Davis S. | v1.0.0");
 	label2->setColor(0xFFFFFF);
 	label2->setFont(&lv_font_montserrat_14);
-	label2->setAlign(LV_ALIGN_BOTTOM_LEFT, 0, 0);*/
+	label2->setAlign(LV_ALIGN_BOTTOM_LEFT, 0, 0);
 
 	bar = new ProgressBar(0, 0, 220, 20);
 	bar->setAlign(LV_ALIGN_CENTER, 0, 25);

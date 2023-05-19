@@ -1,8 +1,8 @@
 #include "relvgl/progressbar.h"
 #include "relvgl/display.h"
 
-ProgressBar::ProgressBar(lv_coord_t x, lv_coord_t y, lv_coord_t w, lv_coord_t h) : bar(lv_bar_create(lv_scr_act())), LVObject(bar) {
-    LVObject::initObject();
+ProgressBar::ProgressBar(lv_coord_t x, lv_coord_t y, lv_coord_t w, lv_coord_t h) : bar(lv_bar_create(lv_scr_act())) {
+    LVObject::initObject(bar);
     LVObject::setPos(x, y);
     LVObject::setSize(w, h);
 
