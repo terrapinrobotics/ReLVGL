@@ -13,6 +13,12 @@ public:
     // clear the display
     void clear();
 
+    // set the background color as a hex value
+    void setBackgroundColor(uint32_t color_hex);
+
+    // set the background color as an lv_color_t
+    void setBackgroundColor(lv_color_t color);
+
 private:
     lv_color_t bg_color;
 };
